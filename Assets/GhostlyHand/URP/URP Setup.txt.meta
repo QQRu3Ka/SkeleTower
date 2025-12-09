@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 443dd5b510ac47540ad6bf0e49fec73a
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 212412
+  packageName: Ghostly Hand Shader Free (VR)
+  packageVersion: 1.1
+  assetPath: Assets/GhostlyHand/URP/URP Setup.txt
+  uploadId: 485621

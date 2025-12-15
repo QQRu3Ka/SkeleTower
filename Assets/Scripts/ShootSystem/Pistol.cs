@@ -1,8 +1,11 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Pistol : MonoBehaviour
 {
+    [SerializeField] private InputActionProperty _action;
+
     [SerializeField] private int _maxAmmo;
     [SerializeField] private int _curAmmo;
     [SerializeField] private int _reloadTime;
@@ -13,13 +16,20 @@ public class Pistol : MonoBehaviour
 
     private bool _isReloading;
 
-    private void Update()
+    private void Start()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Shoot();
-        }
+        _action.action.Enable();
+
+        _action.action.performed += ctx => Shoot();
     }
+
+    //private void Update()
+    //{
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        Shoot();
+    //    }
+    //}
 
     private IEnumerator Reload()
     {

@@ -18,6 +18,7 @@ public class EnemySpawn : MonoBehaviour
             yield return new WaitForSeconds(4);
             var enemy = Instantiate(_enemyPrefab, _spawnpoint);
             enemy.GetComponent<EnemyMovement>().SetFields();
+            Destroy(enemy, 30f);
         }
     }
 }

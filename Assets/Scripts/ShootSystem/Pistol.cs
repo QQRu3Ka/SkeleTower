@@ -23,13 +23,13 @@ public class Pistol : MonoBehaviour
         _action.action.performed += ctx => Shoot();
     }
 
-    //private void Update()
-    //{
-    //    if (Input.GetMouseButtonDown(0))
-    //    {
-    //        Shoot();
-    //    }
-    //}
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
+    }
 
     private IEnumerator Reload()
     {

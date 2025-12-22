@@ -8,6 +8,7 @@ TagManager:
   - XROrigin
   - EndPoint
   - UpperTowerPoint
+  - RightHand
   layers:
   - Default
   - TransparentFX

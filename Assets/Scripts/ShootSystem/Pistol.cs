@@ -13,6 +13,7 @@ public class Pistol : MonoBehaviour
     [SerializeField] private Transform _pistolEnd;
     [SerializeField] private GameObject _hitEffect;
     [SerializeField] private GameObject _reloadCanvas;
+    [SerializeField] private PointSystem _pointSystem;
 
     private bool _isReloading;
 
@@ -56,6 +57,7 @@ public class Pistol : MonoBehaviour
                 var obj = hit.transform.gameObject;
                 if (obj.CompareTag("Enemy"))
                 {
+                    _pointSystem.AddOnePoint();
                     Destroy(obj);
                 }
                 var effect = Instantiate(_hitEffect, hit.point, Quaternion.LookRotation(hit.normal));

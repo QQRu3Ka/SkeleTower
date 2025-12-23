@@ -12,7 +12,7 @@ public class EnemySpawn : MonoBehaviour
         StartCoroutine(SpawnEnemies());
     }
 
-    private IEnumerator SpawnEnemies()
+    public IEnumerator SpawnEnemies()
     {
         while (true) {
             yield return new WaitForSeconds(4);

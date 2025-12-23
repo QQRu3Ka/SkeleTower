@@ -58,7 +58,7 @@ public class Shotgun : MonoBehaviour
                 if (obj.CompareTag("Enemy"))
                 {
                     _pointSystem.AddOnePoint();
-                    Destroy(obj);
+                    obj.GetComponent<EnemyMovement>().SetDeath();
                 }
                 var effect = Instantiate(_hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(effect, 1f);
@@ -69,7 +69,7 @@ public class Shotgun : MonoBehaviour
                 if (obj.CompareTag("Enemy"))
                 {
                     _pointSystem.AddOnePoint();
-                    Destroy(obj);
+                    obj.GetComponent<EnemyMovement>().SetDeath();
                 }
                 var effect = Instantiate(_hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(effect, 1f);
@@ -80,7 +80,7 @@ public class Shotgun : MonoBehaviour
                 if (obj.CompareTag("Enemy"))
                 {
                     _pointSystem.AddOnePoint();
-                    Destroy(obj);
+                    obj.GetComponent<EnemyMovement>().SetDeath();
                 }
                 var effect = Instantiate(_hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(effect, 1f);
@@ -91,7 +91,7 @@ public class Shotgun : MonoBehaviour
                 if (obj.CompareTag("Enemy"))
                 {
                     _pointSystem.AddOnePoint();
-                    Destroy(obj);
+                    obj.GetComponent<EnemyMovement>().SetDeath();
                 }
                 var effect = Instantiate(_hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(effect, 1f);
@@ -102,7 +102,7 @@ public class Shotgun : MonoBehaviour
                 if (obj.CompareTag("Enemy"))
                 {
                     _pointSystem.AddOnePoint();
-                    Destroy(obj);
+                    obj.GetComponent<EnemyMovement>().SetDeath();
                 }
                 var effect = Instantiate(_hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(effect, 1f);
